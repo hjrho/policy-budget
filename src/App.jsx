@@ -211,7 +211,7 @@ const totalSpent = (selections) =>
 //      data text
 // 4. Insert one row manually: id=1, data=[]
 const SUPABASE_URL = "https://bvmzbpgtxelfvzpmwvpy.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_i8sFVOAR6T5OCqncG_mHpA_mKt3XcWc";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ2bXpicGd0eGVsZnZ6cG13dnB5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYwOTA3MTEsImV4cCI6MjA5MTY2NjcxMX0.3yRIbeMjqhT_SojXEu1vrYg4NGoggDA2JLJYWVnNOIY";
 
 async function loadSubmissions() {
   try {
