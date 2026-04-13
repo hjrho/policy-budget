@@ -299,7 +299,7 @@ function StudentView({ onInstructor }) {
   const submit = async () => {
     if (!groupName.trim() || busy) return;
     setBusy(true);
-    const subs = await loadSubmissionsFromDb();
+    const subs = await loadSubmissions();
     const idx = subs.findIndex(s => s.groupName.toLowerCase() === groupName.trim().toLowerCase());
     const entry = { groupName: groupName.trim(), selections, rationale: rationale.trim(), spent, timestamp: Date.now() };
     if (idx >= 0) subs[idx] = entry; else subs.push(entry);
@@ -550,7 +550,7 @@ function InstructorView({ onBack }) {
   const [subs, setSubs] = useState(null);
   const [expanded, setExpanded] = useState(null);
 
-  const load = async () => { const s = await loadSubmissionsFromDb(); s.sort((a, b) => b.timestamp - a.timestamp); setSubs(s); };
+  const load = async () => { const s = await loadSubmissions(); s.sort((a, b) => b.timestamp - a.timestamp); setSubs(s); };
   useEffect(() => { load(); }, []);
 
   const clearAll = async () => {
