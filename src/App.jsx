@@ -51,14 +51,10 @@ const POLICIES = [
   },
   {
     id: 5, category: "Labor Market",
-    name: "Raise State Minimum Wage",
-    subtitle: "Indexed to inflation, with small employer transition support",
+    name: "Raise State Minimum Wage to $17/hr",
+    subtitle: "Michigan is already on track for $15 by 2027 — this goes further",
     cost: 90,
-    tiers: [
-      { label: "Full ($17/hr)", cost: 90, reach: "All workers; phased over 3 years with small employer tax credits" },
-      { label: "Partial ($15/hr)", cost: 45, reach: "Faster to pass politically; Dube estimates roughly half the poverty-reduction impact" },
-    ],
-    description: "Michigan's minimum wage is $13.73/hour as of January 2026 — still well below what research suggests is needed. Arindrajit Dube's landmark study found that raising the minimum wage 10% reduces poverty by 2–5%. Washington State ($16.28), California ($16.50), and New York City ($16.50) have already passed $16+ floors with no significant employment losses. The Raise the Wage Act of 2023 proposed $17 federally by 2028. This option pairs the increase with small-business tax credits to ease the transition — a politically viable structure used in Illinois and New Jersey.",
+    description: "Michigan's minimum wage is on a legislated path to $15/hour by 2027 under the Improved Workforce Opportunity Wage Act. This policy goes further, raising it to $17/hour, paired with small-business tax credits to ease the transition. Arindrajit Dube's landmark study found that raising the minimum wage 10% reduces poverty by 2–5%. Washington State ($16.28), California ($16.50), and New York City ($16.50) have already passed $16+ floors with no significant employment losses. The Raise the Wage Act of 2023 proposed $17 federally by 2028.",
     theorist: "Holzer / Dube",
     tension: "Helps the working poor — but what about the non-working poor, who don't benefit at all?",
     tag: "Labor Market", example: "Washington, California, New York City; Illinois small-business tax credit model",
@@ -375,7 +371,7 @@ function StudentView({ onInstructor }) {
         {/* Info banner */}
         <div style={{ background: "#FFF8EC", border: "1px solid #E8D5A3", borderRadius: 5, padding: "0.7rem 1rem", marginBottom: "1.1rem", fontSize: "0.78rem", color: "#5A4520", lineHeight: 1.6 }}>
           <strong>How to use:</strong> Click a card to select it. Click ▼ to read the full description and state examples.
-          Six policies offer a <strong>Full / Partial</strong> funding option — choose after selecting. You cannot exceed $500M total.
+          Five policies offer a <strong>Full / Partial</strong> funding option — choose after selecting. You cannot exceed $500M total.
         </div>
 
         {/* Policy cards */}
